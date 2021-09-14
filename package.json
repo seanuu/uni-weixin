@@ -1,0 +1,76 @@
+{
+    "name": "uni-weixin",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "serve": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
+        "build": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
+        "prettier": "prettier ./**/*.{js,json,ts,vue} --write"
+    },
+    "dependencies": {
+        "@dcloudio/uni-app-plus": "^2.0.0-31920210709003",
+        "@dcloudio/uni-h5": "^2.0.0-31920210709003",
+        "@dcloudio/uni-helper-json": "*",
+        "@dcloudio/uni-i18n": "^2.0.0-31920210709003",
+        "@dcloudio/uni-mp-vue": "^2.0.0-31920210709003",
+        "@dcloudio/uni-mp-weixin": "^2.0.0-31920210709003",
+        "@dcloudio/uni-stat": "^2.0.0-31920210709003",
+        "@tailwindcss/postcss7-compat": "^2.2.4",
+        "@vue/shared": "^3.0.0",
+        "autoprefixer": "9",
+        "core-js": "^3.6.5",
+        "flyio": "^0.6.2",
+        "lint-staged": "^11.0.1",
+        "postcss": "7",
+        "regenerator-runtime": "^0.12.1",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+        "vue": "^2.6.11",
+        "vue-class-component": "^6.3.2",
+        "vue-property-decorator": "^8.0.0",
+        "vuex": "^3.2.0",
+        "yorkie": "^2.0.0"
+    },
+    "devDependencies": {
+        "@babel/plugin-syntax-typescript": "^7.2.0",
+        "@babel/runtime": "~7.12.0",
+        "@dcloudio/types": "*",
+        "@dcloudio/uni-automator": "^2.0.0-31920210709003",
+        "@dcloudio/uni-cli-shared": "^2.0.0-31920210709003",
+        "@dcloudio/uni-migration": "^2.0.0-31920210709003",
+        "@dcloudio/uni-template-compiler": "^2.0.0-31920210709003",
+        "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-31920210709003",
+        "@dcloudio/vue-cli-plugin-uni": "^2.0.0-31920210709003",
+        "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-31920210709003",
+        "@dcloudio/webpack-uni-mp-loader": "^2.0.0-31920210709003",
+        "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31920210709003",
+        "@vue/cli-plugin-babel": "~4.5.0",
+        "@vue/cli-plugin-typescript": "*",
+        "@vue/cli-service": "~4.5.0",
+        "babel-plugin-import": "^1.11.0",
+        "cross-env": "^7.0.2",
+        "jest": "^25.4.0",
+        "mini-types": "*",
+        "miniprogram-api-typings": "*",
+        "postcss-class-rename": "^1.0.1",
+        "postcss-comment": "^2.0.0",
+        "prettier": "^2.3.2",
+        "typescript": "^3.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "browserslist": [
+        "Android >= 4",
+        "ios >= 8"
+    ],
+    "uni-app": {
+        "scripts": {}
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,ts,json,vue,css}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
+}

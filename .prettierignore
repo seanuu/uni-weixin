@@ -1,0 +1,7 @@
+public/
+assets/
+node_modules/
+
+src/static/
+yarn.lock
+dist/
